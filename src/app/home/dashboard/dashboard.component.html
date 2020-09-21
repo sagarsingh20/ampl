@@ -1,0 +1,200 @@
+<div class="container-fluid">
+    <p style="padding: 10px">Statistics</p>
+
+    <!-- FIRST ROW -->
+    <div class="row">
+        <div class="card col-sm-2 col-4">
+            <div class="card-header">icon</div>
+            <div class="card-body"><b>230</b></div>
+            <p style="font-size:12px;padding-left:10px;">Active Stories</p>
+        </div>
+
+        <div class="card col-sm-2 col-4">
+            <div class="card-header">icon</div>
+            <div class="card-body"><b>520</b></div>
+            <p style="font-size:12px;padding-left:10px;">Shares</p>
+        </div>
+
+        <div class="card col-sm-2 col-4">
+            <div class="card-header">icon</div>
+            <div class="card-body"><b>610</b></div>
+            <p style="font-size:12px;padding-left:10px;">Clicks</p>
+        </div>
+
+        <div class="card col-sm-2 col-4">
+            <div class="card-header">icon</div>
+            <div class="card-body"><b>430</b></div>
+            <p style="font-size:12px;padding-left:10px;">Impressions</p>
+            
+           
+        </div>
+        <div class="card col-sm-2 col-4">
+            <div class="card-header">icon</div>
+            <div class="card-body"><b>130</b></div>
+           <p style="font-size:12px;padding-left:10px;">Engagement</p>
+        </div>
+    </div>
+    <br>
+
+
+    <!-- SECOND ROW -->
+    <div class="row">
+        <div class="col-12 col-sm-6">
+            <div class="barChart">
+                <div>
+                    <canvas id="mybar"></canvas>
+                </div>    
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="doughChart">
+                <p style="position: relative; left: 274px; top:216px; font-size: 25px; color: rgba(115, 189, 240)">{{total}}K</p>
+                <p style="position: relative; left: 284px; top:200px;">Total</p>
+                <div>
+                    <canvas id="dough"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    <!-- THIRD ROW -->
+    <div class="row">
+        <div class="col-12 col-sm-8">
+            <div class="influencer">
+                <h6 class="head">Top 5 Influencer</h6>
+                
+                <div class="carousel slide" id="slider" data-ride="carousel">
+      
+                    <div class="carousel-inner">
+                        
+                        <div class="carousel-item active">
+                            <div class="row">
+                                    <div class="col-sm-4 col-4">
+                                        <div class="card" style="width:240px ;height: 275px;">
+                                            <img src="../../../assets/avtar1.png">
+                                            <div class="card-body ">
+                                                <h4 class="card-title" style="color: black; text-align: center">Mala Diaz</h4>
+                                                <p class="card-text" style="text-align: center"><b>210</b></p>
+                                                <p class="card-text" style="color:black; font-size:12px;text-align: center">Clicks</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 col-4">
+                                        <div class="card" style="width:240px ;height: 275px;">
+                                            <img src="../../../assets/avtar2.png">
+                                            <div class="card-body">
+                                                <h4 class="card-title"style="color: black;text-align: center">Sam Smith</h4>
+                                                <p class="card-text" style="text-align: center"><b>361</b></p>
+                                                <p class="card-text" style="color:black; font-size:12px;text-align: center">Clicks</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-4">
+                                        <div class="card" style="width:210px ;height: 275px;">
+                                            <img src="../../../assets/avtar3.png">
+                                            <div class="card-body">
+                                                <h4 class="card-title" style="color: black;text-align: center">Molly Smith</h4>
+                                                <p class="card-text"style="text-align: center"><b>562</b></p>
+                                                <p class="card-text" style="color:black; font-size:12px;text-align: center">Clicks</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>                           
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-4 col-4">
+                                    <div class="card" style="width:220px ;height: 275px;">
+                                    <img src="../../../assets/avtar4.png">
+                                        <div class="card-body">
+                                            <h4 class="card-title"style="color: black;text-align: center">Samy Diaz</h4>
+                                            <p class="card-text" style="text-align: center"><b>662</b></p>
+                                            <p class="card-text" style="color:black; font-size:12px;text-align: center">Clicks</p>         
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-4" >
+                                    <div class="card"style="width:220px ;height: 275px;">
+                                        <img src="../../../assets/avtar2.png">
+                                        <div class="card-body">
+                                            <h4 class="card-title"style="color: black;text-align: center">Jiaz</h4>
+                                            <p class="card-text" style="text-align: center"><b>773</b></p>
+                                            <p class="card-text"style="color:black; font-size:12px;text-align: center">Clicks</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+       
+                    </div>
+                    <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <br>
+
+            <div class="posts">        
+                <div class="row">
+                        <div class="col-sm-9 col-9">
+                            <h6 class="head">Top 5 Posts</h6>
+                        </div> 
+                        <div class="col-sm-3 col-3">
+                            <p class="left">Clicks</p>
+                        </div>
+                    <div class="col-sm-9 col-9">
+                        <p class="head">Meet Amployee</p>
+                    </div>
+                    <div class="col-sm-3 col-3">
+                        <p class="left">210</p>
+                    </div>
+                    <div class="col-sm-9 col-9">
+                        <p class="head">Appain on Twitter</p>
+                    </div>
+                    <div class="col-sm-3 col-3">
+                        <p class="left">670</p>
+                    </div>
+                    <div class="col-sm-9 col-9">
+                        <p class="head">How to Create Strategic</p>
+                    </div>
+                    <div class="col-sm-3 col-3">
+                        <p class="left">910</p>
+                    </div>
+                    <div class="col-sm-9 col-9">
+                        <p class="head">5 Quick Reasons Why Your Employees</p>
+                    </div>
+                    <div class="col-sm-3 col-3">
+                        <p class="left">280</p>
+                    </div>
+                    <div class="col-sm-9 col-9">
+                        <p class="head">Episodes 3- Hexaware's Trust, Technology</p>
+                    </div>
+                    <div class="col-sm-3 col-3">
+                        <p class="left">3890</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="col-sm-4 col-12">
+            <div class="colubar">
+                <div>
+                    <canvas id="columns" style="width: 300px;height: 400px;"></canvas>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+</div>

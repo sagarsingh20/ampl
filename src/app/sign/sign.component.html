@@ -1,0 +1,82 @@
+
+<div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-10 col-md-8 col-lg-6">
+            <div class="card signForm">
+                <form class="form" [formGroup]="signupForm" (ngSubmit)='sign()'>
+                    <h3 class="text-center">Amployee SignUp Page</h3>
+
+                    <div class="form-group">
+                        <mat-form-field appearance="fill" class="col-sm-10">
+                            <mat-label>Enter your Name Here</mat-label>
+                            <input matInput formControlName="name" class="form-control">
+                        </mat-form-field>
+                        <div *ngIf="signupForm.controls['name'].touched">
+                            <small class="text-danger" *ngIf="signupForm.controls['name'].errors?.required">Name is a required field!</small>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <mat-form-field appearance="fill" class="col-sm-10">
+                            <mat-label>Enter your Email</mat-label>
+                            <input matInput formControlName="email" class="form-control">
+                        </mat-form-field>
+                        <div *ngIf="signupForm.controls['email'].dirty">
+                            <small class="text-danger" *ngIf=" signupForm.controls['email'].errors?.pattern">Email should be in the form aa@aa.xyz</small>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <mat-form-field appearance="fill" class="col-sm-10">
+                            <mat-label>Enter your password</mat-label>
+                            <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" class="form-control">
+                            <mat-icon matSuffix (click)="hide = !hide">
+                                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </mat-icon>
+                        </mat-form-field>
+
+
+                        <div *ngIf="signupForm.controls['password'].touched || signupForm.controls['password'].dirty">
+                            <small class="text-danger" *ngIf=" signupForm.controls['password'].errors?.pattern">
+                                Password must contain atleast 1 uppercase letter, 1 lowercase letter, 1 digit, 1 special character and length must be of 8-15 characters
+                            </small>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <mat-form-field appearance="fill" class="col-sm-10">
+                            <mat-label>Confirm your password</mat-label>
+                            <input matInput [type]="hide1 ? 'password' : 'text'" formControlName="cpassword" class="form-control">
+                            <mat-icon matSuffix (click)="hide1 = !hide1">
+                                <mat-icon>{{hide1 ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </mat-icon>
+                        </mat-form-field>
+
+                        <div *ngIf="signupForm.controls['cpassword'].touched || signupForm.controls['cpassword'].dirty">
+                            <small class="text-danger" *ngIf="signupForm.controls['cpassword'].value!= signupForm.controls['password'].value">
+                                    Password doesn't match
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <button btn-btn-primary value="submit" [disabled]="signupForm.invalid || signupForm.controls['cpassword'].value!= signupForm.controls['password'].value"
+                         class="col-sm-10 btn btn-primary">SignUp Here</button>
+                       
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,29 @@
+.mat-sidenav-container{
+    background-color:  rgb(206, 227, 241)
+}
+
+.mat-sidenav{
+    width: 190px;
+    //padding: 15px;
+    padding-top:15px;
+}
+.spce{
+    flex:1 1 auto;
+}
+.mat-toolbar{
+    background-color:  rgb(206, 227, 241)
+}
+.mat-sidenav a {
+    padding: 6px 8px 6px 16px;
+    font-size: 18px;
+    color: black;
+    display: block;
+}
+
+.search{
+    padding: 10px;
+}
+ 
+.active { 
+    background-color:rgba(206, 227, 241);
+} 

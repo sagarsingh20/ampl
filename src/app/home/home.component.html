@@ -1,0 +1,35 @@
+<mat-sidenav-container fullscreen>
+    
+    <mat-sidenav opened mode="side" position="start"  #sidenav>
+       <a routerLink='dashboard' routerLinkActive="active">Dashboard</a>
+       <a routerLink="wall" routerLinkActive="active">Wall</a>
+       <a routerLink="myshare" routerLinkActive="active"> My Share </a>
+       <a routerLink="influencer" routerLinkActive="active">Influencer</a>
+       <a routerLink="content" routerLinkActive="active">Content</a>
+       <a routerLink="leaderboard" routerLinkActive="active">LeaderBoard</a>
+       <a routerLink="admin" routerLinkActive="active">Admin</a>
+       <a routerLink="setting" routerLinkActive="active">Setting</a>
+       <a routerLink="profile" routerLinkActive="active">Profile</a>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+          
+        <mat-toolbar>
+            <button mat-icon-button (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <div class="row">
+                <div class="col-sm-8 col-4">
+                    <form class="search">
+                        <input  type="text" placeholder="Search.." name="search">    
+                    </form>
+                </div>                
+            </div>
+            <span class="spce"></span>
+            <div>bell Root Info Solutions</div>
+           
+        </mat-toolbar>
+        <router-outlet></router-outlet>   
+    </mat-sidenav-content>
+    
+</mat-sidenav-container>

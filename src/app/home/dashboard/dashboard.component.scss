@@ -1,0 +1,54 @@
+.container-fluid {
+    height: 100%;
+}
+.card {
+    height: 150px;
+    width: 100px;
+    margin-left: 40px;
+    background-color: whitesmoke;
+}
+.card-body{
+    color: #1589FF;
+    font-size: 20px
+}
+.barChart{
+    background-color: whitesmoke;
+    width: 900px;
+    height: 500px;
+    margin: 40px;
+}
+.doughChart{
+    background-color: whitesmoke;
+    margin-left: 140px;
+    margin-top: 40px;
+    width: 600px;
+    height: 500px; 
+}
+.colubar{
+    height: 760px;
+    background-color: whitesmoke;
+    margin: 40px;
+}
+.influencer{
+    background-color: whitesmoke; 
+    margin: 40px;
+}
+.posts{
+    background-color: whitesmoke; 
+    margin: 40px; 
+}
+.head{
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 15px;
+}
+.left{
+    text-align: right;
+    padding-right: 45px;
+}
+.carousel-control-next-icon{
+    background-color: black;
+}
+.carousel-control-prev-icon{
+    background-color: black;
+}
