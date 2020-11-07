@@ -1,3 +1,73 @@
-<div class="container-fluid">
-        <p>wall works!</p>
+<div class="wallScreen">
+        <div class="display">
+                <div class="row">
+                        <div class="card col-sm-2 col-4">
+                                <div class="card-header">icon</div>
+                                <div class="card-body"><b>230</b></div>
+                                <p style="font-size:12px;padding-left:10px;">Active Stories</p>
+                        </div>
+                    
+                        <div class="card col-sm-2 col-4">
+                                <div class="card-header">icon</div>
+                                <div class="card-body"><b>520</b></div>
+                                <p style="font-size:12px;padding-left:10px;">Shares</p>
+                        </div>
+                    
+                        <div class="card col-sm-2 col-4">
+                                <div class="card-header">icon</div>
+                                <div class="card-body"><b>610</b></div>
+                                <p style="font-size:12px;padding-left:10px;">Clicks</p>
+                        </div>
+                    
+                        <div class="card col-sm-2 col-4">
+                                <div class="card-header">icon</div>
+                                <div class="card-body"><b>430</b></div>
+                                <p style="font-size:12px;padding-left:10px;">Impressions</p>  
+                        </div>
+                
+                        <div class="card col-sm-2 col-4" style="margin-right: 10px">
+                                <div class="card-header">icon</div>
+                                <div class="card-body"><b>130</b></div>
+                                <p style="font-size:12px;padding-left:10px;">Engagement</p>
+                        </div>
+                </div>
+                
+                <!-- <div class="row">
+                        <div class="col-sm-6 col-12">
+                                <div class="barChart">
+                                        <canvas id="mybar"></canvas>
+                                </div>
+                        </div>
+                        <div class="col-sm-6 col-12">
+                                <div class="doughnut">
+                                        <canvas id="dough"></canvas>   
+                                </div>  
+                        </div>
+                </div> -->
+
+                <div class="row">
+                        <div class="col-12 col-sm-6">
+                                <div class="barChart">
+                                        <canvas baseChart 
+                                        [datasets]="barChartData"
+                                        [labels]="barChartLabels"
+                                        [options]="barChartOptions"
+                                        [legend]="barChartLegend"
+                                        [chartType]="barChartType"></canvas>
+                                </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6">
+                                <div class="doughnut">
+                                        <canvas baseChart 
+                                        [datasets]="doughnutChartData"
+                                        [labels]="doughnutChartLabels"
+                                        [options]="doughnutChartOptions"
+                                        [plugins]="doughnutChartPlugins"
+                                        [chartType]="doughnutChartType"></canvas>
+                                </div>
+                        </div>
+                </div>
+                
+        </div>
 </div>
